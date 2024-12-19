@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Steven Brown's Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Steven Brown's portfolio showcasing projects in software development, property management, and fitness.">
+    <meta name="keywords" content="Steven Brown, Portfolio, Software Development, Property Management, Fitness Advocate">
+    <meta name="author" content="Steven Brown">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="https://wolfoffranchises.com/wp-content/uploads/sites/2/2022/09/Grand-Welcome-Franchise-1.png" alt="Steven Brown Logo" class="logo">
+        <h1>My Portfolio</h1>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#new-project">New Project</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="about" data-aos="fade-up">
+            <h2>About Me</h2>
+            <img src="https://media.licdn.com/dms/image/v2/C4D03AQGNGsNke2avoA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1642425592432?e=1738800000&v=beta&t=l6cOVMV948TNxABwn5JtdqhekblD8xu0WF-vasGrbsg" alt="Steven Brown" class="profile-picture">
+            <p>
+                Hello! I'm <strong>Steven Brown</strong>, the driving force behind <strong>B&B Ventures</strong> and a dedicated veteran entrepreneur. At the helm of <strong>Grand Welcome</strong>, my vacation rental and property management franchise, I oversee operations across vibrant markets in the U.S., from the lively streets of Nashville and Austin to the serene landscapes of the Smoky Mountains, Breckenridge, Hilton Head, Sea Ranch, and Mammoth. My mission is to blend local accountability with seamless guest experiences, ensuring both homeowners and guests receive unparalleled service.
+            </p>
+            <p>
+                <i class="fas fa-laptop-code"></i> <strong>Technology</strong>: My passion extends beyond my business endeavors into the realms of technology and personal growth. As a self-taught programmer, I'm delving into Full Stack Software Development to craft innovative solutions that propel my business forward. I'm also venturing into cybersecurity and networking, areas I believe hold immense potential for future expansion.
+            </p>
+            <p>
+                <i class="fas fa-dumbbell"></i> <strong>Fitness</strong>: Fitness is another cornerstone of my life. I concentrate on bodybuilding with a focus on hypertrophy and strength, balancing my entrepreneurial pursuits with rigorous training. As a father, entrepreneur, and fitness advocate, I constantly seek innovative strategies to manage my time effectively and maintain peak productivity.
+            </p>
+            <p>
+                Looking ahead, my vision is to scale my business, develop software solutions that streamline operations, and make meaningful contributions to the communities I serve. Whether it's optimizing processes, enhancing guest experiences, or designing cutting-edge technology, my goal is to deliver value and efficiency in everything I undertake.
+            </p>
+            <p>
+                Thank you for visiting—I’m excited to connect and explore new opportunities together!
+            </p>
+        </section>
+
+        <!-- New Project Section -->
+        <section id="new-project" data-aos="fade-up" data-aos-delay="200">
+            <h2>Enter New Project Details</h2>
+            <form id="project-form">
+                <label for="project-title">Project Title</label>
+                <input type="text" id="project-title" required>
+
+                <label for="project-description">Project Description</label>
+                <textarea id="project-description" required></textarea>
+
+                <label for="project-image">Image URL</label>
+                <input type="text" id="project-image" required>
+
+                <button type="button" onclick="saveNewProject()">Save</button>
+            </form>
+        </section>
+
+        <!-- My Projects Section -->
+        <section id="projects" data-aos="fade-up" data-aos-delay="400">
+            <h2>My Projects</h2>
+            <div id="projects-container">
+                <!-- Loader Element -->
+                <div id="loader" class="loader"></div>
+                <div class="project-card">
+                    <img src="https://images.pexels.com/photos/1226398/pexels-photo-1226398.jpeg" alt="ToDo List App image" loading="lazy">
+                    <div class="project-info">
+                        <h3>ToDo List App</h3>
+                        <p>An interactive todo list application to track tasks and activities.</p>
+                        <div class="project-actions">
+                            <a href="./projects/todo-list-app/index.html" target="_blank" class="btn" aria-label="View project: ToDo List App">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" data-aos="fade-up" data-aos-delay="1000">
+            <h2>Blog</h2>
+            <div class="blog-post">
+                <h3>Choosing the Right Booking Platforms for Your Nashville Rental</h3>
+                <p>Choosing the right booking platform is crucial for maximizing your rental's visibility and occupancy rates. In this post, we explore the top platforms available for Nashville rentals...</p>
+                <a href="https://www.nashvillehost.com/blog/choosing-the-right-booking-platforms-for-your-nashville-rental" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>Enhancing the Guest Experience in Nashville Vacation Rentals</h3>
+                <p>Creating memorable experiences for your guests can lead to higher satisfaction and repeat bookings. Discover effective strategies to enhance the guest experience in your Nashville vacation rentals...</p>
+                <a href="https://www.nashvillehost.com/blog/enhancing-the-guest-experience-in-nashville-vacation-rentals" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>Effective Financial Management for Nashville Vacation Rentals</h3>
+                <p>Managing finances effectively is key to the success of any vacation rental business. Learn how to streamline your financial processes and ensure profitability for your Nashville rentals...</p>
+                <a href="https://www.nashvillehost.com/blog/effective-financial-management-for-nashville-vacation-rentals" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>Creating a Unique Stay Experience in Your Nashville Rental</h3>
+                <p>Stand out in the competitive Nashville rental market by offering unique and personalized stay experiences. This article delves into creative ideas to make your property unforgettable...</p>
+                <a href="https://www.nashvillehost.com/blog/creating-a-unique-stay-experience-in-your-nashville-rental" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>Enhancing Outdoor Spaces in Your Nashville Vacation Rental</h3>
+                <p>Outdoor spaces can significantly impact your guests' overall experience. Explore tips and designs to enhance the outdoor areas of your Nashville vacation rentals...</p>
+                <a href="https://www.nashvillehost.com/blog/enhancing-outdoor-spaces-in-your-nashville-vacation-rental" class="read-more">Read More</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" data-aos="fade-up" data-aos-delay="600">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" required>
+
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" required>
+
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <div id="contact-success" class="hidden">
+                <p>Thank you for your message! I'll get back to you soon.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Steven Brown</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/steven00brown/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/vacationC0DER" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:stevenbrown@bnbventuresco.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>Designed and Developed by vacationCODER</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Library Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-V03zk2k6A0+f0Dyrtk7skkVrjvO1tYYbBjrT9XfXz9giNofk2rsSOAj2VAaWHtE3/nq8YI3kRnH/dGAQ+dU6bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/projects.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
